@@ -13,20 +13,29 @@
   position: relative;
 }
 
+.title{
+  font-size: 4vw;
+  font-weight: bold;
+  position: relative;
+  padding: 1vw;
+  margin-left: 23vw;
+  width: 50vw;
+}
+
 .avatar{
   position: absolute;
   height: 4vw;
   width: auto;
-  margin-left: 66%;
+  margin-left: 72%;
   margin-top: -5vw;
 }
 
 .speech{
-  width: 300px;
-  margin-left: 72%;
+  width: 17vw;
+  margin-left: 78%;
   margin-top: -4vw;
   background: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   font-weight: 900;
   color: black;

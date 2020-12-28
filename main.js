@@ -61,6 +61,7 @@ function clickNgede(){
     success.play();
     document.getElementById("part2").style.display = "block";
     document.getElementById("firstSuccess").style.display = "block";
+    document.getElementById("firstError").style.display = "none";
   }
   else{
     failure.play();
@@ -76,6 +77,7 @@ function clickG(){
   else{
     success.play();
     document.getElementById("firstSuccess").style.display = "block";
+    document.getElementById("firstError").style.display = "none";
     value = 1;
   }
 }
