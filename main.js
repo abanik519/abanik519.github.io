@@ -6,6 +6,7 @@ var value = 0;
 function plusSlides(n) {
   showSlides(slideIndex += n);  
   document.getElementById("n").style.display = "none";
+  document.getElementById("c").style.display = "block";
 }
 
 // Thumbnail image controls
@@ -51,21 +52,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  if(slideIndex == 2){
-    document.getElementById("p").style.display = "none";
-    document.getElementById("n").style.display = "block";
-    document.getElementById("c").style.display = "block";
-  }
-  else if(slideIndex == 13){
-    document.getElementById("p").style.display = "block";
-    document.getElementById("n").style.display = "none";
-    document.getElementById("c").style.display = "block";
-  }
-  else{
-    document.getElementById("p").style.display = "block";
-    document.getElementById("n").style.display = "block";
-    document.getElementById("c").style.display = "block";
-  }
 }
 
 function clickNgede(){
