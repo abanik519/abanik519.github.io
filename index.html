@@ -59,8 +59,16 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s1.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird rattled, as he flew to the next tree, and the next. “Chitik, chitik, chitik,” he called, stopping from time to time to be sure that Gingile followed.</div>
+        <img class="avatar" onclick="toggle('secondq1')" src="/images/Avatar.png">
+        <div id="secondq1" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="rattled" class="dictionary" style="margin-top: 10vw; margin-left: 62vw; display: none;">
+          <b style="background-color: lightgray;">Rattled (verb, past tense).</b> <br>1. Made a rapid sequence of short sharp noises. <br>2. Chattered on-and-on.
+          <div class="bubble3"></div>
+          <div class="bubble4"></div>
+        </div>
+        <div class="words">One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mouth began to water at the thought of honey. He stopped and listened carefully, 
+          searching until he saw the bird in the branches above his head. “Chitik-chitik-chitik,” the little bird <span style="background-color: lightgray; cursor: pointer;" onclick="toggle('rattled'); showNext()"> rattled</span>, as he flew to the next tree, and the next. 
+          “Chitik, chitik, chitik,” he called, stopping from time to time to be sure that Gingile followed.</div>
       </div>
     </div>
 
@@ -69,8 +77,16 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s2.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">After half an hour, they reached a huge wild fig tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at Gingile as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he trusted Ngede.</div>
+        <img class="avatar" onclick="toggle('thirdq1')" src="/images/Avatar.png">
+        <div id="thirdq1" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="thirdq2" class="multiple arrow" style="display: none;">
+          Which one of these fruits is a fig? <br> <span style="font-size: 1vw; background-color: whitesmoke;">(Click the right picture)</span> <br><br>
+          <img class="multImg" onclick="failure()" src="images/Orange.PNG">
+          <img class="multImg" onclick="success(); showNext()" src="images/Fig.PNG">
+          <img class="multImg" onclick="failure()" src="images/Kiwi.PNG">
+        </div>
+        <div class="words">After half an hour, they reached a huge wild <span style="background-color: lightgrey; cursor: pointer;" onclick="toggle('thirdq2')">fig</span> tree. Ngede hopped about madly among the branches. He then settled on one branch and cocked his head at 
+          Gingile as if to say, “Here it is! Come now! What is taking you so long?” Gingile couldn’t see any bees from under the tree, but he trusted Ngede.</div>
       </div>
     </div>
 
@@ -79,8 +95,10 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s3.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the smoking stick in his teeth.</div>
+        <img class="avatar" onclick="toggle('fourth'); showNext()" src="/images/Avatar.png">
+        <div id="fourth" style="display: none;" class="speech sb1">I wonder why Gingele needs a smoking stick?</div>
+        <div class="words">So Gingile put down his hunting spear under the tree, gathered some dry twigs and made a small fire. When the fire was burning well, he put a long dry stick
+           into the heart of the fire. This wood was especially known to make lots of smoke while it burned. He began climbing, holding the cool end of the <span style="background-color: lightgray;">smoking stick</span> in his teeth.</div>
       </div>
     </div>
 
@@ -89,8 +107,16 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s4.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their hive. When Gingile reached the hive he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t like the smoke – but not before they had given Gingile some painful stings!</div>
+        <img class="avatar" onclick="toggle('fifth')" src="/images/Avatar.png">
+        <div id="fifth" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="hive" class="dictionary" style="margin-top: 3vw; margin-left: 35vw; display: none;">
+          <b style="background-color: lightgray;">Hive (noun).</b> <br>A shelter for a colony of bees.
+          <div class="bubble1"></div>
+          <div class="bubble2"></div>
+        </div>
+        <div class="words">Soon he could hear the loud buzzing of the busy bees. They were coming in and out of a hollow in the tree trunk – their <span style="background-color: lightgray; cursor: pointer;" onclick="toggle('hive'); showNext()">hive</span>. When Gingile reached the hive
+           he pushed the smoking end of the stick into the hollow. The bees came rushing out, angry and mean. They flew away because they didn’t like the smoke – but not before they had
+           given Gingile some painful stings!</div>
       </div>
     </div>
 
@@ -99,8 +125,13 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s5.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, white grubs. He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the tree.</div>
+        <img class="avatar" onclick="toggle('sixth')" src="/images/Avatar.png">
+        <div id="sixth" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="thirdq2" class="multiple arrow" style="">
+          Gingile wanted the bee's honey so he took their <input>
+        </div>
+        <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, white grubs. 
+          He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the <span style="background-color: lightgray;">tree</span>.</div>
       </div>
     </div>
 
@@ -171,7 +202,7 @@
   </div>
   
   <!-- The dots/circles -->
-  <div class="dots" id="c" style="text-align:center; display: none;">
+  <div class="dots" id="c" style="text-align:center;">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>

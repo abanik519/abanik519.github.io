@@ -83,3 +83,13 @@ function clickG(){
     document.getElementById("n").style.display = "block";
   }
 }
+
+function success(){
+  var success = new Audio("/sounds/success.wav");
+  success.play();
+}
+
+function failure(){
+  var failure = new Audio("/sounds/failure.wav");
+  failure.play();
+}
