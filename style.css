@@ -36,6 +36,15 @@
 
 }
 
+.choice{
+  background-color: whitesmoke; 
+  cursor: pointer;
+}
+
+.choice:hover{
+  font-weight: bold;
+}
+
 .arrow:before{
   content: "";
   width: 0px;
@@ -49,6 +58,18 @@
   top: 6px;
 }
 
+.arrow2:before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid whitesmoke;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid whitesmoke;
+  right: -19px;
+  bottom: 6px;
+}
 .multImg{
   width: 10vw;
   height: auto;

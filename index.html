@@ -127,11 +127,12 @@
         <img class="pic" src="/images/s5.jpg">
         <img class="avatar" onclick="toggle('sixth')" src="/images/Avatar.png">
         <div id="sixth" style="display: none;" class="speech sb1">Click the highlighted text</div>
-        <div id="thirdq2" class="multiple arrow" style="">
-          Gingile wanted the bee's honey so he took their <input>
+        <div id="comb" class="multiple arrow" style="margin-left: 16vw; height: 8vw; margin-top: 18vw; display: none;">
+          Gingile wanted the bee's honey so he took their <input style="width: 15vw; height: 3vw; font-size: 2vw;border-top: hidden; border-left: hidden; border-right: hidden; 
+          background-color:  whitesmoke; text-align: center; outline: none;" placeholder="Enter Answer" onkeydown="checkWord(event)">
         </div>
         <div class="words">When the bees were out, Gingile pushed his hands into the nest. He took out handfuls of the heavy comb, dripping with rich honey and full of fat, white grubs. 
-          He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the <span style="background-color: lightgray;">tree</span>.</div>
+          He put the comb carefully in the pouch he carried on his shoulder, and started to climb down the <span style="background-color: lightgray; cursor: pointer;" onclick="toggle('comb')">tree</span>.</div>
       </div>
     </div>
 
@@ -140,8 +141,11 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s6.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">Ngede eagerly watched everything that Gingile was doing. He was waiting for him to leave a fat piece of honeycomb as a thank-you offering to the Honeyguide. Ngede flittered from branch to branch, closer and closer to the ground. Finally Gingile reached the bottom of the tree. Ngede perched on a rock near the boy and waited for his reward.</div>
+        <img class="avatar" onclick="toggle('seventh')" src="/images/Avatar.png">
+        <div id="seventh" style="display: none;" class="speech sb1">Ngede is expecting a reward. Do you think that the Honeyguide deserves a reward? <span style="background-color: white; cursor: pointer;" onclick="showNext(); hide('seventh')">(a) Yes</span> <span style="background-color: white; cursor: pointer;" onclick="showNext(); hide('seventh')">(b) No</span></div>
+        <div class="words">Ngede eagerly watched everything that Gingile was doing. He was waiting for him to leave a fat piece of honeycomb as a thank-you offering to the Honeyguide. 
+          Ngede flittered from branch to branch, closer and closer to the ground. Finally Gingile reached the bottom of the tree. Ngede perched on a rock near the boy and waited for his 
+          reward.</div>
       </div>
     </div>
 
@@ -150,8 +154,19 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s7.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile stopped, stared at the little bird and laughed aloud. “You want some honey, do you, my friend? Ha! But I did all the work, and got all the stings. Why should I share any of this lovely honey with you?” Then he walked off. Ngede was furious! This was no way to treat him! But he would get his revenge.</div>
+        <img class="avatar" onclick="toggle('eight')" src="/images/Avatar.png">
+        <div id="eight" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="furious" class="multiple arrow2" style="margin-left: 7vw; margin-top: 6vw; height: 20vw; display: none">
+          Ngede is furious. Which of these words is a synonym for furious? Click all the words that mean the same thing as furious:
+          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(a) angry</span>
+          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(b) enraged</span>
+          <br><span class="choice" onclick="failure()">(c) tranquil</span>
+          <br><span class="choice" onclick="success(); count(); checkCount(3, 'furious')">(d) mad</span>
+          <br><span class="choice" onclick="failure()">(e) serene</span>
+        </div>
+        <div class="words">But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird. Ngede called out angrily, “VIC-torr! VIC-torrr!” Gingile 
+          stopped, stared at the little bird and laughed aloud. “You want some honey, do you, my friend? Ha! But I did all the work, and got all the stings. Why should I share any of 
+          this lovely honey with you?” Then he walked off. Ngede was <span style="background-color: lightgray; cursor: pointer;" onclick="toggle('furious')">furious</span>! This was no way to treat him! But he would get his revenge.</div>
       </div>
     </div>
 
@@ -160,8 +175,11 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s8.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the delicious honey, and eagerly followed the bird once again. After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.” He quickly made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.</div>
+        <img class="avatar" onclick="toggle('ninth'); showNext()" src="/images/Avatar.png">
+        <div id="ninth" style="display: none; width: 25vw;" class="speech sb1">Gingele is eagerly following the honeyguide bird because he is sure that Ngede will lead him to more honey. He can't wait to find a new hive. I wonder if there is a beehive in this tree? What do you think? Let's find out.</div>
+        <div class="words">One day several weeks later Gingile again heard the honey call of Ngede. He remembered the delicious honey, and <span style="background-color: lightgray;">eagerly</span> followed the bird once again. 
+          After leading Gingile along the edge of the forest, Ngede stopped to rest in a great umbrella thorn. “Ahh,” thought Gingile. “The hive must be in this tree.” He quickly 
+          made his small fire and began to climb, the smoking branch in his teeth. Ngede sat and watched.</div>
       </div>
     </div>
 
@@ -170,8 +188,16 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s9.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch. But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened her mouth to reveal her very large and very sharp teeth.</div>
+        <img class="avatar" onclick="toggle('tenth')" src="/images/Avatar.png">
+        <div id="tenth" style="display: none;" class="speech sb1">Click the highlighted text</div>
+        <div id="reveal" class="dictionary" style="margin-top: 15vw; margin-left: 35vw; display: none;">
+          <b style="background-color: lightgray;">Reveal (verb).</b> <br>Show something that was hidden.
+          <div class="bubble1"></div>
+          <div class="bubble2"></div>
+        </div>
+        <div class="words">Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another 
+          branch. But instead of the hive, he was staring into the face of a leopard! Leopard was very angry at having her sleep so rudely interrupted. She narrowed her eyes, opened 
+          her mouth to <span style="background-color:lightgray; cursor: pointer;" onclick="toggle('reveal'); showNext()">reveal</span> her very large and very sharp teeth.</div>
       </div>
     </div>
 
@@ -180,8 +206,17 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s10.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">Before Leopard could take a swipe at Gingile, he rushed down the tree. In his hurry he missed a branch, and landed with a heavy thud on the ground twisting his ankle. He hobbled off as fast as he could. Luckily for him, Leopard was still too sleepy to chase him. Ngede, the Honeyguide, had his revenge. And Gingile learned his lesson.</div>
+        <img class="avatar" onclick="toggle('eleventh')" src="/images/Avatar.png">
+        <div id="eleventh" style="display: none; width: 30vw;" class="speech sb1">How did Ngede have his revenge? 
+          <span style="font-weight: normal;">
+          <br><span class="choice" style="background-color: white;" onclick="failure()">(a) He stole the honey comb from Gingele's pouch. </span>
+          <br><span class="choice" style="background-color: white;" onclick="failure()">(b) He startled Gingele so that the boy fell and twisted his ankle.</span>
+          <br><span class="choice" style="background-color: white;" onclick="success(); showNext(); hide('eleventh')">(c) He tricked Gingele into climbing the wrong tree and waking up a dangerous leapard.</span>
+        </span>
+        </div>
+        <div class="words">Before Leopard could take a swipe at Gingile, he rushed down the tree. In his hurry he missed a branch, and landed with a heavy thud on the ground twisting
+           his ankle. He hobbled off as fast as he could. Luckily for him, Leopard was still too sleepy to chase him. Ngede, the Honeyguide, had his <span style="background-color: lightgray;">revenge</span>. And Gingile learned his 
+           lesson.</div>
       </div>
     </div>
 
@@ -190,8 +225,14 @@
       <div class="slide">
         <div class="title">The Honeyguide's Revenge</div>
         <img class="pic" src="/images/s11.jpg">
-        <img class="avatar" src="/images/Avatar.png">
-        <div class="words">And so, when the children of Gingile hear the story of Ngede they have respect for the little bird. Whenever they harvest honey, they make sure to leave the biggest part of the comb for Honeyguide!</div>
+        <img class="avatar" onclick="toggle('twelfth')" src="/images/Avatar.png">
+        <div id="twelfth" style="display: none; width: 30vw;" class="speech sb1">Now you have heard the story of Ngede you have learned the lesson too. You have learned to have respect for 
+          <span style="font-weight: normal;">
+          <br><span class="choice" style="background-color: white;" onclick="success(); showNext()">(a) Gingele</span>
+          <br><span class="choice" style="background-color: white;" onclick="success(); showNext()">(b) The Honeyguide </span>
+        </span>
+        </div>
+        <div class="words">And so, when the children of Gingile hear the <span style="background-color: lightgray;">story of Ngede</span> they have respect for the little bird. Whenever they harvest honey, they make sure to leave the biggest part of the comb for Honeyguide!</div>
       </div>
     </div>
 
