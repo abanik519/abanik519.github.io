@@ -59,6 +59,8 @@ function clickNgede(){
   var failure = new Audio("/sounds/failure.wav");
   if(document.getElementById("firstq1").style.width == "18vw" ){
     success.play();
+    stop("1.1A");
+    play("1.1B");
     document.getElementById("firstq1").style.width = "17vw";
     document.getElementById("firstq2").style.display = "block";
     document.getElementById("firstq1").style.display = "none";
@@ -77,6 +79,7 @@ function clickG(){
   }
   else{
     success.play();
+    stop("1.1B");
     document.getElementById("firstq2").style.display = "none";
     document.getElementById("firstSuccess").style.display = "block";
     document.getElementById("firstAvatar").onclick = function(){ toggle("firstSuccess") };
@@ -85,19 +88,32 @@ function clickG(){
 }
 
 function success(){
-  var success = new Audio("/sounds/success.wav");
+  var success = document.getElementById("success");
   success.play();
 }
 
 function failure(){
-  var failure = new Audio("/sounds/failure.wav");
+  var failure = document.getElementById("failure");
   failure.play();
 }
 
-function checkWord(e){
-  if(e.keyCode == 13){
-    document.getElementById("comb").style.display = "none";
-    showNext();
+function play(sound_path){
+  var sound = document.getElementById(sound_path);
+  sound.play();
+}
+
+function stop(sound_path){
+  var sound = document.getElementById(sound_path);
+  sound.pause();
+  sound.currentTime = 0;
+}
+
+function checkWord(){
+  var value = document.getElementById('input1').value;
+  if(value != ""){
+    showNext();  
+    hide('comb'); 
+    stop('1.5');
   }
 }
 
@@ -108,6 +124,11 @@ function count(){
 function checkCount(num, id){
   if(check == num){
     document.getElementById(id).style.display = "none";
+    stop('1.7');
     showNext();
   }
+}
+
+function highlight(id){
+  document.getElementById(id).style.backgroundColor = "lightgray";
 }

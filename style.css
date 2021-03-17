@@ -39,6 +39,8 @@
 .choice{
   background-color: whitesmoke; 
   cursor: pointer;
+  font-size: 1.5vw;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .choice:hover{
@@ -79,16 +81,17 @@
 
 
 .dictionary{
-  width: 25vw;
-  height: 8vw;
-  padding: .5vw 1vw .5vw 1vw;
+  width: 28vw;
+  height: auto;
+  display: none;
+  padding: .5vw 2vw .5vw 1vw;
+  margin-left: 54vw;
   background:lightgray;
   text-align: center;
-  font-size: 1vw;
-  border-radius: 40%;
+  font-size: 1.5vw;
+  border-radius: 20vw;
   border: .2vw solid black;
   color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   position: absolute;
   line-height: 2.2vw;
 }
@@ -97,11 +100,11 @@
   border: .2vw solid black;
   background-color: lightgrey;
   position: absolute;
-  width: 25px;
-  padding: 20px;
+  width: 2vw;
+  padding: 1.5vw;
   border-radius: 50%;
-  right: -15px;
-  bottom: 23px;
+  right: -2vw;
+  bottom: 1vw;
 }
 
 
@@ -110,33 +113,33 @@
   border: .2vw solid black;
   background-color: lightgrey;
   position: absolute;
-  width: 5px;
-  padding: 10px 15px;
+  width: 1vw;
+  padding: 1vw 1.5vw;
   border-radius: 50%;
-  right: -60px;
-  bottom: 5px;
+  right: -5vw;
+  bottom: 0vw;
 }
 
 .bubble3 {
   border: .2vw solid black;
   background-color: lightgrey;
   position: absolute;
-  width: 1vw;
-  padding: 20px;
+  width: 2vw;
+  padding: 1.5vw;
   border-radius: 50%;
-  left: -10px;
-  bottom: 10px;
+  left: -2vw;
+  bottom: 1vw;
 }
 
 .bubble4 {
   border: .2vw solid black;
   background-color: lightgrey;
   position: absolute;
-  width: 5px;
-  padding: 10px 15px;
+  width: 1vw;
+  padding: 1vw 1.5vw;
   border-radius: 50%;
-  left: -60px;
-  bottom: 5px;
+  left: -5.5vw;
+  bottom: 1vw;
 }
 
 .avatar{
@@ -158,7 +161,6 @@
   font-size: 1.5vw;
   border-radius: 9px;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: absolute;
   line-height: 2.2vw;
 }
@@ -174,6 +176,45 @@
   border-bottom: 10px solid transparent;
   left: -19px;
   top: 6px;
+}
+
+.success-checkmark:after {
+  content: '✔';
+  cursor: pointer;
+  position: absolute;
+  width: 2vw; 
+  height: 2vw;
+  text-align: center;
+  border: 1px solid #aaa;
+  background: greenyellow;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+
+.success-checkmark2:after {
+  content: '✔';
+  cursor: pointer;
+  position: absolute;
+  width: 2.5vw; 
+  height: 2.5vw;
+  text-align: center;
+  border: 1px solid #aaa;
+  background: greenyellow;
+  border-radius: 50%;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+
+.toggleButton{
+  text-align: center;
+  position: absolute;
+  height: auto;
+  font-weight: bold;
+  transform: translate(60vw, 1vw);
+  padding: 1vw;
+  font-size: 2vw;
+  border-radius: 2vw;
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .pic{
@@ -203,13 +244,12 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 25vh;
   padding: 20px;
-  color: grey;
+  color: green;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 5vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -260,6 +300,7 @@
   background-color: #717171;
 }
 
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -279,7 +320,7 @@
 }
 
 /* Bouncing animation */
-@-webkit-keyframes bounceLeft {
+@-webkit-keyframes bounceRight {
   0%,
   20%,
   50%,
@@ -289,15 +330,15 @@
     transform: translateX(0);
   }
   40% {
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
   }
   60% {
-    -webkit-transform: translateX(15px);
-    transform: translateX(15px);
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
   }
 }
-@-moz-keyframes bounceLeft {
+@-moz-keyframes bounceRight {
   0%,
   20%,
   50%,
@@ -306,13 +347,13 @@
     transform: translateX(0);
   }
   40% {
-    transform: translateX(30px);
+    transform: translateX(-30px);
   }
   60% {
-    transform: translateX(15px);
+    transform: translateX(-15px);
   }
 }
-@keyframes bounceLeft {
+@keyframes bounceRight {
   0%,
   20%,
   50%,
@@ -322,20 +363,23 @@
     transform: translateX(0);
   }
   40% {
-    -ms-transform: translateX(30px);
-    transform: translateX(30px);
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
   }
   60% {
-    -ms-transform: translateX(15px);
-    transform: translateX(15px);
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
   }
 }
 /* /left bounce */
 
-.fa-arrow-left {
-  -webkit-animation: bounceLeft 2s infinite;
-  animation: bounceLeft 2s infinite;
-  margin-top: 2vw;
+.fa-arrow-right {
+  -webkit-animation: bounceRight 2s infinite;
+  animation: bounceRight 2s infinite;
+  margin-top: 30vh;
+  padding: 20px;
+  margin-left: 90vw;
   font-size:2.5vw;
+  float: left;
   position: absolute;
 }
